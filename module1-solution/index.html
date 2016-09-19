@@ -7,9 +7,12 @@
 </head>
 <body ng-app="LunchCheck">
 	<div ng-controller="LunchCheckController">
-		<input type="text" ng-model="name">
-		<input type="button">
-		<div>{{message}}</div>
+		<input type="text" ng-model="name" ng-keyup="displayNumeric();">
+		<input type="button" value="Check If Too Much" ng-click="displayMessage();">
+
+		<div>There are {{totalLunchItems}} lunch items</div>
+
+		{{message}}
 	</div>
 </body>
 </html>
