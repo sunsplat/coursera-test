@@ -19,7 +19,7 @@
 
 		function calculateLunchItems(string) {
 			var totalItems = 0;
-			var itemsArray = string.split(' ');
+			var itemsArray = string.split(',');
 			for (var i = 0; i < itemsArray.length; i++) {
 				totalItems += 1;
 			}
