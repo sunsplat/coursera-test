@@ -30,6 +30,7 @@
 			var message = "";
 			if (number == 0) {
 				message = "Please enter data first";
+
 			} else if (number <= 3) {
 				message = "Enjoy!";
 			} else {
